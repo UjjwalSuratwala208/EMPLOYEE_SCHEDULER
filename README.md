@@ -3,13 +3,13 @@
 This project contains **two implementations of the same console application**:
 
 - **Python**: `final_scheduler.py`
-- **Java**: `final_EmployeeScheduler.java` (public class name: `EmployeeScheduler`)
+- **Java**: `EmployeeScheduler.java` (public class name: `EmployeeScheduler`)
 
 The program builds a **7‑day schedule** with **3 shifts per day** (Morning, Afternoon, Evening), using **priority-ranked employee preferences** and simple rules to keep the schedule fair and covered.
 
 ---
 
-## What the application does
+## What the application does: 
 
 ### Scheduling rules (constraints)
 - **7 days**: Monday → Sunday  
@@ -41,7 +41,7 @@ The scheduling logic runs in **three passes**:
 3. **Conflict resolution pass**
    - If an employee requested certain days but wasn’t scheduled on those days, the scheduler tries to place them using their ranked shift list (only if they still have capacity for more work days).
 
-> Note: This is a deterministic “rule-based” scheduler, not an optimization solver. With a small number of employees, some constraints may be impossible to satisfy perfectly (e.g., too few employees to cover all shifts).
+
 
 ---
 
@@ -50,9 +50,9 @@ The scheduling logic runs in **three passes**:
 ```
 .
 ├── final_scheduler.py              # Python implementation
-├── final_EmployeeScheduler.java    # Java implementation (class: EmployeeScheduler)
-├── Final_Python_Screenshot.png     # Sample Python console output (demo)
-└── Final_Java_Screenshot.png       # Sample Java console output (demo)
+├── EmployeeScheduler.java    # Java implementation (class: EmployeeScheduler)
+├── Final_Python_Code_output.png     # Sample Python console output 
+└── Final_Java_Code_output.png       # Sample Java console output 
 ```
 
 ---
@@ -183,5 +183,5 @@ Both implementations are designed to **keep prompting until valid input is recei
 
 ## Screenshots
 Sample console outputs are included:
-- `Final_Python_Screenshot.png`
-- `Final_Java_Screenshot.png`
+- `Final_Python_Code_output.png`
+- `Final_Java_Code_output.png`
